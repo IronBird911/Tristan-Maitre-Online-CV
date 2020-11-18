@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<!-- INDEX Page of my Online Resume - Tristan Maitre for CS50x pset8 -->
+
+<html lang="en">
+<head>
+    <title>Tristan MAITRE -  Contact Form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Tristan Maitre's Online Resume ">
+    <meta name="keywords" content="Systems Engineer, Resume, CV">
+    <meta name="author" content="Tristan MAITRE">
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="images/icon.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- My CSS sheet -->
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="components/footer.js" defer></script>
+    <script src="components/form.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid py-0">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/TM-solid.svg" width="40" height="40" class="d-inline-block" alt="TM logo">
+                    <!--<span class="navbar-text text-header text-light"> Tristan Maitre - SYSTEMS ENGINEER </span>-->
+                    <span class="navbar-text">
+                        Tristan Maitre - SYSTEMS ENGINEER &nbsp;
+                    </span>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+
+                <ul class="nav navbar-nav ml-auto">
+                    <li><a class="nav-item nav-link" href="index.html">About Me</a></li>
+                    <li><a class="nav-item nav-link " href="resume.html">Resume  </a></li>
+                    <li><a class="nav-item nav-link" href="portfolio.html">Portfolio </a></li>
+                    <li><a class="nav-item nav-link active text-primary" href="contact.html">Contact <span class="sr-only">(current)</span>   </a></li>
+                </ul>
+                <a href="ressources/TristanMAITRE_CV.pdf" target="_blank" download="Tristan_Maitre_Resume.pdf" class="btn btn-light"><i class="fa fa-download"></i>CV</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Container : Form -->
+    <div id="content" class="container-fluid pb-5">
+        <div class="row justify-content-center">
+            <div class="col-sm-8">
+                <section id="form" class="margin">
+                    <h1 class="margin">Let's meet</h1>
+                    <form name="Contact" action="mailto:hire.tristan.maitre@gmail.com" onsubmit="return validateForm()" method="GET" enctype="text/plain">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputName">Name</label>
+                                <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail">Email</label>
+                                <input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="inputSubject">Subject</label>
+                                <input type="text" class="form-control" id="inputSubject" name="subject">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="inputMessage">Message</label>
+                                <textarea class="form-control" id="inputMessage" name="body" cols="60" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" value="Send">Send</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer-component></footer-component>
+
+</body>
+</html>
