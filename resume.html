@@ -29,7 +29,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-resume" data-offset="15">
     <!-- HEADER  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid py-0">
@@ -63,7 +63,27 @@
     <!-- Main Container : Resume Sections-->
     <div id="content" class="container-fluid">
         <div class="row justify-content-center">
+            <!--  NAV Bar sections of resume-->
+            <div class="col-sm-4">
+                <nav id="navbar-resume">
+                    <ul class="nav nav-pills nav-stacked affix" data-spy="affix" data-offset-top="205">
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#certificates">Certificates</a></li>
+                        <li><a href="#techSkills">Technical Skills</a></li>
+                        <li><a href="#softSkills">Soft Skills</a></li>
+                        <li><a href="#languages">Languages</a></li>
+                        <li><a href="#interests">Interests</a></li>
+                        <li><a href="#certificates">Certificates</a></li>
+                        <li><a href="#references">References</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Resume On right -->
+
             <div class="col-sm-8">
+
                 <section id="experience">
                     <h1>Experience</h1>
                     <div class="card shadow" id="apsys">
@@ -76,16 +96,18 @@
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
                                     <h5>System Designer - Airbus Surveillance (ATA34) Design Office</h5>
-                                    <p> Product development for more integrated & automated cockpit functions </p>
+                                    <p> Product development for more integrated & automated cockpit functions</p>
                                     <ul>
                                         <li>Perform technical analysis on stekeholders requirements, technical constraints and business case</li>
-                                        <li>Specify and model future systems for traffic, terrain & weather avoidance functions</li>
+                                        <li>Specify and model future systems and interfaces for traffic, terrain & weather avoidance functions</li>
+                                        <li>Conduct architecture trade-offs to optimise around SWAP-C and integration constraints</li>
                                         <li>Liaise with flight operations, test managers, and suppliers (e.g. Honeywell, Garmin, ACSS, Collins Aerospace) to launch industrial phase</li>
+                                        <li>Follow-up workshops during Request for Information/Proposal phase and provide technical answers to suppliers/bidders</li>
                                     </ul>
                                 </li>
                                 <li class="list-group-item">
                                     <h5>V&V Focal Point - A/C Condition & Monitoring (ATA31) Design Office</h5>
-                                    <p> Coordinate acceptance testing activities for Aircraft Data Collection function </p>
+                                    <p> Coordinate acceptance testing activities for Aircraft Data Collection function, in the frame  of Skywise - big data analytics program at Airbus </p>
                                     <ul>
                                         <li>Implement a test strategy for each new embedded software standard</li>
                                         <li>Establish procedures for test bench, simulator and flight test </li>
@@ -126,9 +148,11 @@
                                 <li class="list-group-item">
                                     <p> Support Head of ICM in defining new processes & methods at PMO level </p>
                                     <ul>
+                                        <li>Formalise the innovation and change landscape at skyguide</li>
                                         <li>Develop a Company Roadmap to align functional and company strategies</li>
-                                        <li>Propose a structure for the external funding in innovative projects</li>
+                                        <li>Propose a structure for funding: how to manage national and internal funding sources for innovation</li>
                                         <li>Submit a White Paper on innovation in the Air Traffic Management area</li>
+                                        <li>Synthesize internship results to target audiences, up to executive management</li>
                                     </ul>
                                     <h6><a href="portfolio.html#ICM">Innovation Funding and Company Roadmap in my portfolio</a></h6>
                                 </li>
@@ -141,8 +165,14 @@
                             <h2 class="card-title">Internship - Sales and Marketing of Aviation Products and Services</h2>
                             <h4 class="card-text"><a href="https://www.ruag.ch/en/our-competencies/portfolio/extensive-support-air-systems" target="_blank">RUAG Aviation Subsystems & Products</a></h4>
                             <h6 class="card-subtitle mb-2 text-muted">Interlaken, Switzerland</h6>
-                            <p> Support product owners in producing factsheets, invoices, contracts and certification papers for MRO services and aviation sub-system</p>
+
                             <!-- <a href="#" class="btn btn-primary">More on Apsys website</a> -->
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <p style="font-style: italic;">First professionnal experience in the aviation sector, in a departement between customers, engineering and workshop, to propose optimum solutions and alternatives for product maintenance. </p>
+                                    <p> Tasks: Support product owners in producing factsheets, invoices, contracts and certification papers for MRO services and aviation sub-system</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </section>
@@ -155,7 +185,8 @@
                             <h3>Track Aerospace Systems - Major Systems Engineering  </h3>
                             <h4 class="card-text"><a href="https://www.isae-supaero.fr/en/academics/MSc/isae-supaero-master-s-degree-msc/" target="_blank">Institut Supérieur de l’Aéronautique et de l’Espace (SUP'AERO)</a></h4>
                             <h6 class="card-subtitle mb-2 text-muted">Toulouse, France</h6>
-                            <!-- <a href="#" class="btn btn-primary">More on Apsys website</a> -->
+                            <p style="font-style: italic;">"Fully taught in English, the ISAE-SUPAERO Master of Science degree programis designed to prepare engineering students to find and develop solutions to today’s and tomorrow’s challenges facing the world and the aerospace industry"</p>
+                            <p style="font-style: italic;">Great multicultural experience with the collaboration with students from all around the world. This gave me an holistic view on development process in the aerospace and the ability to fast and analyze technical information in a quick and efficient manner </p>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
                                     <h5>04-2018 - 10/2018 : Master Thesis </h5>
@@ -328,7 +359,7 @@
                                 <div class="col-1 px-0">
                                     <img src="images/solutionOriented.svg" class="icon-resume" alt="solutions icon">
                                 </div>
-                                <div class="col-3 px-1">
+                                <div class="col-2 px-1">
                                     <p class="skill">
                                         Solution-oriented <br />system thinker
                                     </p>
@@ -336,7 +367,7 @@
                                 <div class="col-1 px-0">
                                     <img src="images/flexible.svg" class="icon-resume" alt="flexible icon">
                                 </div>
-                                <div class="col-3 px-1">
+                                <div class="col-2 px-1">
                                     <p class="skill">
                                         Flexible &amp; <br /> Open-minded
                                     </p>
@@ -344,9 +375,17 @@
                                 <div class="col-1 px-0">
                                     <img src="images/teamwork.svg" class="icon-resume" alt="teamwork icon">
                                 </div>
-                                <div class="col-3 px-1">
+                                <div class="col-2 px-1">
                                     <p class="skill">
                                         Proactive <br /> team player
+                                    </p>
+                                </div>
+                                <div class="col-1 px-0">
+                                    <img src="images/curious.png" class="icon-resume" alt="curious icon">
+                                </div>
+                                <div class="col-2 px-1">
+                                    <p class="skill">
+                                        Curious <br /> fast-learner
                                     </p>
                                 </div>
                             </div>
@@ -433,13 +472,34 @@
                     Name and contact details of my references available <a href="contact.html">upon request</a>
                 </section>
 
-
             </div>
         </div>
     </div>
-
     <!-- Footer -->
     <footer-component></footer-component>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
 
+            var $sidebar = $("#navbar-resume"),
+                $window = $(window),
+                offset = $sidebar.offset(),
+                topPadding = 80;
+
+            $window.scroll(function () {
+                if ($window.scrollTop() > offset.top) {
+                    $sidebar.stop().animate({
+                        marginTop: $window.scrollTop() - offset.top + topPadding
+                    });
+                } else {
+                    $sidebar.stop().animate({
+                        marginTop: 20
+                    });
+                }
+            });
+
+        });
+    </script>
 </body>
 </html>

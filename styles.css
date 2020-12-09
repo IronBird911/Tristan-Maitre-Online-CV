@@ -2,6 +2,7 @@ body {
     font: 18px Montserrat, sans-serif;
     line-height: 1.5;
     color: black;
+    position: relative;
 }
 
 p {
@@ -78,6 +79,15 @@ li > ul {
     background-color: #777;
 }
 
+.scrollContainer {
+    height: 2500px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.affix {
+    top: 20px;
+}
 
 .footer {
     /*  position: fixed;*/
